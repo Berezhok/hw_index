@@ -38,7 +38,7 @@
 ###                                -> Covering index lookup on r using rental_date (rental_date=p.payment_date)  (cost=0.969 rows=1.04) (actual time=858e-6..0.0012 rows=1.01 loops=634000)
 ###                            -> Single-row index lookup on c using PRIMARY (customer_id=r.customer_id)  (cost=250e-6 rows=1) (actual time=94.5e-6..109e-6 rows=1 loops=642000)
 ###                        -> Single-row covering index lookup on i using PRIMARY (inventory_id=r.inventory_id)  (cost=250e-6 rows=1) (actual time=80.2e-6..94.8e-6 rows=1 loops=642000)
-### -----------------------+++++++++++++++++++++++++++++++++++-----------------------------------------------------------
+### -----------------------+++++++++++++++++++++++++++++++++++-----------------------------------------
 ### Так стало после изменений. Время обработки значительно сократилось, строк стало в разы меньше при обработке оконной функции с 642000 снизилось до 634.
 ### Я не совсем понимаю что это, но этих петель loops тоже стало на порядки меньше. 
 ### -> Table scan on <temporary>  (cost=2.5..2.5 rows=0) (actual time=4.33..4.35 rows=391 loops=1)
