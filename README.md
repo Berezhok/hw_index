@@ -61,4 +61,6 @@
 ### Я попытался переделать с вашими предложениями, но все равно не очень понятно. Вроде я создал index1 в таблице payment для payment_date, но при запросе explain analyze не могу понять работает он с ним или нет.
 ### ![](https://github.com/Berezhok/hw_index/blob/main/img/index1.png)
 ### ![](https://github.com/Berezhok/hw_index/blob/main/img/explain.png)
-
+### Оставить таблицы rental и inventory, не пойму куда их засунуть, почему-то не хочет работать с ними через join
+### ![](https://github.com/Berezhok/hw_index/blob/main/img/table_other.png)
+### Не смог найти вас в Discorde. 
